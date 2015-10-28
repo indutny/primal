@@ -1,0 +1,35 @@
+{
+  "name": "primal",
+  "version": "1.0.0",
+  "description": "Primality test using fast checks and miller-rabin (all in one)",
+  "main": "lib/primal.js",
+  "scripts": {
+    "test": "mocha --reporter=spec test/*-test.js && jscs lib/*.js test/*.js && jshint lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indutny/primal.git"
+  },
+  "keywords": [
+    "primality",
+    "miller-rabin",
+    "fermat",
+    "check",
+    "bn"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/primal/issues"
+  },
+  "homepage": "https://github.com/indutny/primal#readme",
+  "dependencies": {
+    "bn.js": "^4.0.0",
+    "miller-rabin": "^4.0.0"
+  },
+  "devDependencies": {
+    "jscs": "^2.4.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3"
+  }
+}
